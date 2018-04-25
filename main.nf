@@ -212,7 +212,7 @@ process '2_rnaseq_mapping_star' {
        --alignSJDBoverhangMin 1 \
        --outFilterMismatchNmax 999 \
        --outSAMtype BAM SortedByCoordinate \
-       --limitBAMsortRAM 22000000000 \
+       --limitBAMsortRAM 30000000000 \
        --outSAMattrRGline ID:$replicateId LB:library PL:illumina PU:machine SM:GM12878
 
   # Index the BAM file
